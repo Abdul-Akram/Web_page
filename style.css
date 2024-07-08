@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    min-height: auto;
+}
+
+nav h1 {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #F5F5DC;
+}
+
+.logo {
+    border-radius: 50%;
+    margin-left: 1rem;
+    padding: 2px;
+}
+
+.menus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-menu li {
+    display: inline-block;
+    padding-inline: 2rem;
+    font-size: 1.5rem;
+}
+
+.center-menu li a {
+    text-decoration: none;
+    color: #651118;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.center-menu li a:hover{
+    text-decoration: underline;
+}
+
+.side-menu li {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+main .container-content {
+    height: 90vh;
+}
+
+.background-image {
+    height: 100%;
+    width: 100%;
+    background-image: url("Assets/Food1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-text p {
+    color: white;
+    font-size: .8em;
+    font-weight: bold;
+    text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 1rem;
+}
+
+.overlay-text a {
+    background-color: #651118;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    padding: .3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 0px 0px 0px;
+}
+.overlay-text a:hover{
+    font-size: .9rem;
+}
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: .4rem;
+    border-radius: 10px 10px;
+    color: white;
+    background-color: #651118;
+    cursor: pointer;
+}
+
+main #menu {
+    height: auto;
+}
+
+#menu main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #F5F5DC;
+    color: #651118;
+}
+
+#menu-head,#about-head {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+#menu{
+    background-image: url("Assets/Food4.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.dishes {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem
+}
+
+table td {
+    text-align: justify;
+    color: #651118;
+    font-style: oblique;
+}
+
+table caption {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 1000;
+    background-color: #651118;
+    border-radius: 10px 10px 0px 0px;
+    padding: .4rem;
+}
+
+table th {
+    text-align: left;
+    color: #651118;
+    font-size: 1.2rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: 2rem;
+}
+
+table td {
+    padding-inline: 2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+
+table{
+    width: 70vw;
+    background-color: #f5f5dcca;
+}
+
+.dishes ul li {
+    list-style-type: none;
+}
+#about{
+    height: auto;
+}
+#about .about-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-content{
+    width: 50%;
+    color: #651118;
+}
+.about-content  section h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-content  section p{
+    text-align: justify;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.footer-content a{
+    text-decoration: none;
+    
+    color: #651118;
+}
+.footer-content a:hover{
+    text-decoration: underline;
+}
+button:hover{
+    background-color:#F5F5DC;
+    color: #651118;
+}
+
+
+@media only screen and (max-width: 740px) {
+    .logo {
+        display: none;
+    }
+
+    nav h1 {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        color: #651118;
+    }
+
+    nav {
+        margin: auto;
+        display: block;
+    }
+
+    .menus {
+        display: flex;
+        justify-content: center;
+        padding-top: .3rem;
+    }
+
+    .side {
+        padding-bottom: .3rem;
+    }
+
+    .center-menu li {
+        display: inline-block;
+        padding-inline: .5rem;
+        font-size: 1rem;
+    }
+
+    .side-menu li {
+        display: inline-block;
+        margin-right: 0rem;
+        padding-inline: 0;
+    }
+
+    button {
+        padding: .2rem;
+        color: #651118;
+        background-color: #65111824;
+    }
+
+    .overlay-text {
+        font-size: 1.2rem;
+    }
+    table caption {
+        font-size: 1rem;
+        padding: .3rem;
+    }
+    
+    table th{
+        font-size: 1rem;
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+    }
+    
+    table td {
+        padding-inline: 2rem;
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+    }
+    
+    
+    table{
+        width: 98vw;
+    }
+}
